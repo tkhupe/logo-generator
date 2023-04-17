@@ -7,7 +7,7 @@
 
 const inquirer = require('inquirer');
 const {Svg, writeToFile} = require('./lib/utils.js');
-const { Circle, Square, Triangle } = require('./lib/shapes');
+const { Circle, Square, Triangle } = require('./lib/shapes.js');
 
 const questions = [
     {

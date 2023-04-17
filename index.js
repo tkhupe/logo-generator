@@ -1,6 +1,9 @@
-const {writeToFile, Svg} = require('./lib/utils');
-const inquirer = require('inquirer');
-const {Circle, Square, Triangle} = require('./lib/utils');
+import writeToFile from './lib/utils.js';
+import Svg from './lib/utils.js';
+import inquirer from 'inquirer';
+import Circle from './lib/shapes.js';
+import Square from './lib/shapes.js';
+import Triangle from './lib/shapes.js';
 
 const questions = [
     {
@@ -35,14 +38,14 @@ function init() {
             return;
         }
         let userShapeInput = answers.shapes;
-        let userShape;
-        if(userShapeInput = 'Circle') {
+        let userShape
+        if(userShapeInput == 'Circle') {
             userShape = new Circle()
         }
-        else if(userShapeInput = 'Square') {
+        else if(userShapeInput == 'Square') {
             userShape = new Square()
         }
-        else if(userShapeInput = 'Triangle') {
+        else if(userShapeInput == 'Triangle') {
             userShape = new Triangle()
         }
         userShape.setColor(answers.shapeColor)

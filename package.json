@@ -7,7 +7,7 @@
     "example": "examples",
     "lib": "lib"
   },
-  "type": "module",
+  
   "scripts": {
     "test": "jest"
   },
@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^8.2.4",
+    "inquirer": "^8.2.5",
     "jest": "^29.5.0"
   }
 }

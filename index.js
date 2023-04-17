@@ -1,9 +1,13 @@
-import writeToFile from './lib/utils.js';
-import Svg from './lib/utils.js';
-import inquirer from 'inquirer';
-import Circle from './lib/shapes.js';
-import Square from './lib/shapes.js';
-import Triangle from './lib/shapes.js';
+// import writeToFile from './lib/utils.js';
+// import Svg from './lib/utils.js';
+// import inquirer from 'inquirer';
+// import Circle from './lib/shapes.js';
+// import Square from './lib/shapes.js';
+// import Triangle from './lib/shapes.js';
+
+const inquirer = require('inquirer');
+const {Svg, writeToFile} = require('./lib/utils.js');
+const { Circle, Square, Triangle } = require('./lib/shapes');
 
 const questions = [
     {
